@@ -5,22 +5,19 @@ import AddPatient from "../pages/AddPatient";
 import About from "../pages/About";
 import FullPatientInfo from "../pages/FullPatientInfo";
 import { useEffect, useState } from "react";
+import patientsData from '../../public/Data/patientsData.json'
 
 const AppRoutes = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-       fetch("../../public/Data/patientsData.json") 
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.log("Error fetching patients:", err);
-        setLoading(false);
-      });
+      const timer = setTimeout(() => {
+        setData(patientsData); 
+        setLoading(false); 
+      }, 1000); 
+
+      return () => clearTimeout(timer); 
     }, []);
 
   return (
