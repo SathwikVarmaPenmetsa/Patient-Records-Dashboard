@@ -233,12 +233,21 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .footer-text {
     font-size: 14px;
   }
   .footer-subtext {
     font-size: 12px;
+  }
+  .topdiv{
+    display: none;
+  }
+  .bottomdiv{
+    display: none;
+  }
+  .titletext{
+    display: none;
   }
 }
 
