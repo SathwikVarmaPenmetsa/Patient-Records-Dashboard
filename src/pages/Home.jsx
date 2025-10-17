@@ -14,7 +14,7 @@ const Home = () => {
     if (navType === "POP") {
       gsap.to(".titletext", { opacity: 0, duration: 0.5, delay: 1 });
       gsap.fromTo(".topdiv", { y:-70 , duration: 2, delay: 2 },{y:-450,duration:2 , delay:2});
-      gsap.fromTo(".bottomdiv", { y:'0%', duration: 1, delay: 2 },{y:450,duration:2,delay:2});
+      gsap.fromTo(".bottomdiv", { y:'-5%', duration: 1, delay: 2 },{y:450,duration:2,delay:2});
       gsap.fromTo('.heroTitle',{
         opacity:0,
         duration:1,
