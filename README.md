@@ -1,16 +1,95 @@
-# React + Vite
+# Jarurat Care - Patient Records Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jarurat Care is a simple React app to manage patient records.  
+It allows you to view, search, and add patients quickly. The interface is clean, intuitive, and works on both desktop and mobile devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Landing Page with hero section  
+- Patients page displaying patient cards  
+- Search bar to filter patients by name  
+- View patient details in a modal or separate page  
+- Add new patient form (updates local data)  
+- Responsive design for desktop and mobile  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js  
+- CSS (or Tailwind CSS)  
+- Local JSON file for patient data  
+- React Hooks for state management  
+
+---
+
+### Home Page
+![Home Screenshot](./public/HomePage.png)
+
+-The landing page shows the hero section with the project title, a short subtitle, and buttons to navigate to Patients or Add Patient pages.
+
+### Patients Page
+![Patients Screenshot](./public/patientesPage.png)
+
+- This page displays all patients in responsive cards. You can search patients by name and click "View Details" to see more information.
+
+### Add Patient Page
+![Add Patient Screenshot](./public/AppPatientPage.png)
+
+-This page contains a form to add a new patient to the local data. It updates the dashboard immediately without a backend.
+
+### About Page 
+![Add About Screenshot](./public/AboutPage.png)
+
+### patient full Details page 
+![Add fullPatient details Screenshot](./public/fullPatientsInfoPage.png)
+
+## Folder Structure
+
+jarurat-care/
+│
+├── public/
+│ └── logo
+│
+├── screenshots/ # screenshots for README
+│ ├── home.png
+│ ├── patients.png
+│ └── add.png
+│
+├── src/
+│ ├── assets/ # heroBg.jpg , logo2.png
+| |── Data/ #patientsData.js
+│ ├── pages/ # Home, AddPatients, AboutPage , Fotter , Navbar,patients,,FullPatientinfo
+│ ├── RoutesSetUp/ # AppRoutes.jsx
+│ ├── App.jsx
+│ └── index.css
+| ├── App.css
+│ └── main.jsx
+| 
+│
+├── README.md
+└── package.json
+
+
+1. Clone the repository:
+    git clone https://github.com/SathwikVarmaPenmetsa/Patient-Records-Dashboard.git
+    cd jarurat-care
+
+2. Install dependencies:
+    npm install
+
+3. Start the app:
+    npm run dev
+
+
+### Future Improvements
+
+   - Connect to backend for real data
+   - Staff login/authentication
+   - Sorting/filtering by condition or city
+   - Dark mode UI
+
+### Author
+- Sathwik Varma Penmetsa | Internship Project | October 2025
