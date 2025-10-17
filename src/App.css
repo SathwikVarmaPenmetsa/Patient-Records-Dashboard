@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+
+  .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 0%;
+  height: 3px;
+  background-color:  rgb(255, 255, 255);
+  transition: width 0.3s ease-in-out;
+  border-radius: 20px
+}
+
+
+.nav-link.active::after {
+  width: 110%;
+}
+
+.homepagediv{
+  background-image: url('./assets/heroBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inputdiv{
+  margin-top: 5px;
+  width: 600px;
+}
+
+.inputdiv input{
+  padding: 10px 10px;
+  font-size: 17px;
+  border: 2px solid  rgb(74, 74, 74);
+}
+
+.textjarurat{
+  padding-top: 250px;
+}
+
+.topdiv{
+  transform: translateY(-450px);
+}
+
+.bottomdiv{
+  transform: translateY(450px);
+}
+
+.herotextdiv{
+  margin-top: 300px;
+}
+
+@media (max-width : 600px){
+  .herotextdiv{
+    margin-top: 220px;
+  }
+  .heroTitle{
+    font-size: 65px;
+  }
+  .herotext{
+    font-size: 16px;
+  }
+}
+
+.herotextdiv p{
+  margin-top: 14px;
+}
+
+.moreinfo-btns,
+.hero-btns{
+  padding: 10px 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.herobtndiv{
+  margin-top: 18px;
+}
+
+.searchdiv{
+  background-color: rgba(231, 244, 252) ;
+}
+
+
+.Patientcard{
+  height: 100%;
+  padding: 25px 10px 5px 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 4px 4px 5px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin: auto;
+  border: 1px solid rgb(169, 169, 169);
+}
+
+.Patientcard:hover{
+  box-shadow: 10px 10px 15px gray;
+}
+
+.Patientcard span{
+  margin-right: 10px;
+}
+
+.cardsgrid{
+  padding: 20px;
+}
+
+.backbtn{
+  padding: 5px 20px;
+}
+
+.pb-20{
+  padding-bottom: 20px;
+}
+
+
+.about-container {
+  min-height: 100vh;
+  background-color: #e7f4fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  padding: 40px 20px;
+}
+
+.about-box {
+  background-color: white;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.about-title {
+  font-size: 36px;
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-size: 24px;
+  color: #3b82f6;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  color: #444;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+
+.about-list {
+  text-align: left;
+  margin: 15px auto 25px;
+  max-width: 600px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
+
+.about-footer {
+  font-size: 14px;
+  color: #777;
+  margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .about-box {
+    padding: 25px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-subtitle {
+    font-size: 20px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+
+
+.footer {
+  background-color: #1c9aea; 
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 10px;
+  font-family: "Poppins", sans-serif;
+  margin-top: auto;
+}
+
+.footer-text {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.footer-brand {
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-subtext {
+  font-size: 13px;
+  color: #e7f4fc;
+  opacity: 0.9;
+}
+
+
+@media (max-width: 600px) {
+  .footer-text {
+    font-size: 14px;
+  }
+  .footer-subtext {
+    font-size: 12px;
+  }
+}
+
+.inputboxs input{
+  padding: 10px 12px;
+  margin-top: 6px;
+}
+
+.cardanimation{
+ transition: all 0.4s ease;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

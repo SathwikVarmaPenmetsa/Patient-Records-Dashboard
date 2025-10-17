@@ -1,0 +1,230 @@
+const patientsData =[
+  {
+    "id": 1,
+    "token": "10152025-01",
+    "name": "Leanne Graham",
+    "age": 32,
+    "gender": "Female",
+    "contact": "1-770-736-8031",
+    "email": "leanne.graham@example.com",
+    "bloodGroup": "A+",
+    "lastVisit": "2025-09-10",
+    "condition": "Diabetes",
+    "allergies": "None",
+    "weight": 60,
+    "height": 165,
+    "emergencyContact": { "name": "Mark Graham", "phone": "123-456-7890" },
+    "appointments": [
+      { "date": "2025-10-20", "doctor": "Dr. Smith" }
+    ],
+    "notes": "Monitor blood sugar levels weekly",
+    "address": { "city": "Gwenborough", "street": "Main St" },
+    
+  },
+  {
+    "id": 2,
+    "token": "10152025-02",
+    "name": "Ervin Howell",
+    "age": 45,
+    "gender": "Male",
+    "contact": "010-692-6593",
+    "email": "ervin.howell@example.com",
+    "bloodGroup": "B+",
+    "lastVisit": "2025-09-05",
+    "condition": "Hypertension",
+    "allergies": "Penicillin",
+    "weight": 82,
+    "height": 178,
+    "emergencyContact": { "name": "Laura Howell", "phone": "234-567-8901" },
+    "appointments": [
+      { "date": "2025-10-22", "doctor": "Dr. Adams" }
+    ],
+    "notes": "Take medication daily",
+    "address": { "city": "Wisokyburgh", "street": "Broadway St" },
+    
+  },
+  {
+    "id": 3,
+    "token": "10152025-03",
+    "name": "Clementine Bauch",
+    "age": 28,
+    "gender": "Female",
+    "contact": "1-463-123-4447",
+    "email": "clementine.bauch@example.com",
+    "bloodGroup": "O+",
+    "lastVisit": "2025-08-28",
+    "condition": "Asthma",
+    "allergies": "Dust",
+    "weight": 55,
+    "height": 160,
+    "emergencyContact": { "name": "John Bauch", "phone": "345-678-9012" },
+    "appointments": [
+      { "date": "2025-10-25", "doctor": "Dr. Miller" }
+    ],
+    "notes": "Carry inhaler at all times",
+    "address": { "city": "McKenziehaven", "street": "Green St" },
+   
+  },
+  {
+    "id": 4,
+    "token": "10152025-04",
+    "name": "Patricia Lebsack",
+    "age": 37,
+    "gender": "Female",
+    "contact": "493-170-9623",
+    "email": "patricia.lebsack@example.com",
+    "bloodGroup": "AB+",
+    "lastVisit": "2025-09-12",
+    "condition": "Migraine",
+    "allergies": "None",
+    "weight": 62,
+    "height": 167,
+    "emergencyContact": { "name": "Paul Lebsack", "phone": "456-789-0123" },
+    "appointments": [
+      { "date": "2025-11-01", "doctor": "Dr. Green" }
+    ],
+    "notes": "Avoid triggers, use prescribed medication",
+    "address": { "city": "South Elvis", "street": "Park St" },
+    
+  },
+  {
+    "id": 5,
+    "token": "10152025-05",
+    "name": "Chelsey Dietrich",
+    "age": 50,
+    "gender": "Male",
+    "contact": "254-954-1289",
+    "email": "chelsey.dietrich@example.com",
+    "bloodGroup": "O-",
+    "lastVisit": "2025-09-01",
+    "condition": "Hypertension",
+    "allergies": "Gluten",
+    "weight": 85,
+    "height": 175,
+    "emergencyContact": { "name": "Sandra Dietrich", "phone": "567-890-1234" },
+    "appointments": [
+      { "date": "2025-11-05", "doctor": "Dr. Adams" }
+    ],
+    "notes": "Check blood pressure weekly",
+    "address": { "city": "Roscoeview", "street": "Maple St" },
+    
+  },
+  {
+    "id": 6,
+    "token": "10152025-06",
+    "name": "Mrs. Dennis Schulist",
+    "age": 29,
+    "gender": "Female",
+    "contact": "1-477-935-8478",
+    "email": "dennis.schulist@example.com",
+    "bloodGroup": "A-",
+    "lastVisit": "2025-09-08",
+    "condition": "Asthma",
+    "allergies": "Pollen",
+    "weight": 58,
+    "height": 162,
+    "emergencyContact": { "name": "Henry Schulist", "phone": "678-901-2345" },
+    "appointments": [
+      { "date": "2025-10-28", "doctor": "Dr. Miller" }
+    ],
+    "notes": "Use inhaler as needed",
+    "address": { "city": "South Christy", "street": "Lake St" },
+   
+  },
+  {
+    "id": 7,
+    "token": "10152025-07",
+    "name": "Kurtis Weissnat",
+    "age": 41,
+    "gender": "Male",
+    "contact": "210-067-6132",
+    "email": "kurtis.weissnat@example.com",
+    "bloodGroup": "B-",
+    "lastVisit": "2025-09-14",
+    "condition": "Diabetes",
+    "allergies": "None",
+    "weight": 80,
+    "height": 180,
+    "emergencyContact": { "name": "Linda Weissnat", "phone": "789-012-3456" },
+    "appointments": [
+      { "date": "2025-11-10", "doctor": "Dr. Smith" }
+    ],
+    "notes": "Monitor blood sugar and diet",
+    "address": { "city": "Howemouth", "street": "Hill St" },
+
+  },
+  {
+    "id": 8,
+    "token": "10152025-08",
+    "name": "Nicholas Runolfsdottir",
+    "age": 35,
+    "gender": "Male",
+    "contact": "586-493-6943",
+    "email": "nicholas.runolfsdottir@example.com",
+    "bloodGroup": "O+",
+    "lastVisit": "2025-09-11",
+    "condition": "Hypertension",
+    "allergies": "Seafood",
+    "weight": 78,
+    "height": 176,
+    "emergencyContact": { "name": "Clara Runolfsdottir", "phone": "890-123-4567" },
+    "appointments": [
+      { "date": "2025-11-12", "doctor": "Dr. Adams" }
+    ],
+    "notes": "Medication adherence required",
+    "address": { "city": "Aliyaview", "street": "Main Ave" },
+
+  },
+  {
+    "id": 9,
+    "token": "10152025-09",
+    "name": "Glenna Reichert",
+    "age": 38,
+    "gender": "Female",
+    "contact": "775-976-6794",
+    "email": "glenna.reichert@example.com",
+    "bloodGroup": "AB-",
+    "lastVisit": "2025-09-09",
+    "condition": "Migraine",
+    "allergies": "Latex",
+    "weight": 63,
+    "height": 164,
+    "emergencyContact": { "name": "Tom Reichert", "phone": "901-234-5678" },
+    "appointments": [
+      { "date": "2025-11-15", "doctor": "Dr. Green" }
+    ],
+    "notes": "Avoid stress triggers",
+    "address": { "city": "Bartholomebury", "street": "Elm St" },
+   
+  },
+  {
+    "id": 10,
+    "token": "10152025-10",
+    "name": "Clementina DuBuque",
+    "age": 44,
+    "gender": "Female",
+    "contact": "024-648-3804",
+    "email": "clementina.dubuque@example.com",
+    "bloodGroup": "A+",
+    "lastVisit": "2025-09-07",
+    "condition": "Asthma",
+    "allergies": "Peanuts",
+    "weight": 68,
+    "height": 165,
+    "emergencyContact": { "name": "John DuBuque", "phone": "123-456-7890" },
+    "appointments": [
+      { "date": "2025-10-20", "doctor": "Dr. Smith" },
+      { "date": "2025-11-15", "doctor": "Dr. Adams" }
+    ],
+    "notes": "Patient needs follow-up on asthma medication",
+    "address": { "city": "Lebsackbury", "street": "Oak St" },
+
+  }
+]
+
+
+
+
+
+export default patientsData;
+
