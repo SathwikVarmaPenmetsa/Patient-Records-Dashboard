@@ -1,4 +1,4 @@
-const patientsData =[
+[
   {
     "id": 1,
     "token": "10152025-01",
@@ -18,7 +18,7 @@ const patientsData =[
       { "date": "2025-10-20", "doctor": "Dr. Smith" }
     ],
     "notes": "Monitor blood sugar levels weekly",
-    "address": { "city": "Gwenborough", "street": "Main St" },
+    "address": { "city": "Gwenborough", "street": "Main St" }
     
   },
   {
@@ -40,7 +40,7 @@ const patientsData =[
       { "date": "2025-10-22", "doctor": "Dr. Adams" }
     ],
     "notes": "Take medication daily",
-    "address": { "city": "Wisokyburgh", "street": "Broadway St" },
+    "address": { "city": "Wisokyburgh", "street": "Broadway St" }
     
   },
   {
@@ -62,7 +62,7 @@ const patientsData =[
       { "date": "2025-10-25", "doctor": "Dr. Miller" }
     ],
     "notes": "Carry inhaler at all times",
-    "address": { "city": "McKenziehaven", "street": "Green St" },
+    "address": { "city": "McKenziehaven", "street": "Green St" }
    
   },
   {
@@ -84,7 +84,7 @@ const patientsData =[
       { "date": "2025-11-01", "doctor": "Dr. Green" }
     ],
     "notes": "Avoid triggers, use prescribed medication",
-    "address": { "city": "South Elvis", "street": "Park St" },
+    "address": { "city": "South Elvis", "street": "Park St" }
     
   },
   {
@@ -106,7 +106,7 @@ const patientsData =[
       { "date": "2025-11-05", "doctor": "Dr. Adams" }
     ],
     "notes": "Check blood pressure weekly",
-    "address": { "city": "Roscoeview", "street": "Maple St" },
+    "address": { "city": "Roscoeview", "street": "Maple St" }
     
   },
   {
@@ -128,7 +128,7 @@ const patientsData =[
       { "date": "2025-10-28", "doctor": "Dr. Miller" }
     ],
     "notes": "Use inhaler as needed",
-    "address": { "city": "South Christy", "street": "Lake St" },
+    "address": { "city": "South Christy", "street": "Lake St" }
    
   },
   {
@@ -150,7 +150,7 @@ const patientsData =[
       { "date": "2025-11-10", "doctor": "Dr. Smith" }
     ],
     "notes": "Monitor blood sugar and diet",
-    "address": { "city": "Howemouth", "street": "Hill St" },
+    "address": { "city": "Howemouth", "street": "Hill St" }
 
   },
   {
@@ -172,7 +172,7 @@ const patientsData =[
       { "date": "2025-11-12", "doctor": "Dr. Adams" }
     ],
     "notes": "Medication adherence required",
-    "address": { "city": "Aliyaview", "street": "Main Ave" },
+    "address": { "city": "Aliyaview", "street": "Main Ave" }
 
   },
   {
@@ -194,7 +194,7 @@ const patientsData =[
       { "date": "2025-11-15", "doctor": "Dr. Green" }
     ],
     "notes": "Avoid stress triggers",
-    "address": { "city": "Bartholomebury", "street": "Elm St" },
+    "address": { "city": "Bartholomebury", "street": "Elm St" }
    
   },
   {
@@ -217,14 +217,9 @@ const patientsData =[
       { "date": "2025-11-15", "doctor": "Dr. Adams" }
     ],
     "notes": "Patient needs follow-up on asthma medication",
-    "address": { "city": "Lebsackbury", "street": "Oak St" },
+    "address": { "city": "Lebsackbury", "street": "Oak St" }
 
   }
 ]
 
-
-
-
-
-export default patientsData;
 

@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 import { RotatingLines } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 
-const Patients = ({data,setData}) => {
+const Patients = ({data,setData,loading}) => {
   
   const [searchinp , setSearchinp] = useState("");
 
@@ -24,7 +24,22 @@ const Patients = ({data,setData}) => {
       }
   }
 
-
+  if (loading) return <div>
+    <div className="h-[50vh] flex justify-center items-center w-[90vw]">
+            <RotatingLines
+                visible={true}
+                height="96"
+                width="96"
+                color="grey"
+                strokeWidth="5"
+                animationDuration="0.75"
+                ariaLabel="rotating-lines-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                />
+    </div>
+  </div>;
+  
   return (
     <div className="min-h-screen">
       <div className=" sticky top-17 z-20 flex justify-center items-center text-center w-full searchdiv">
@@ -98,19 +113,7 @@ const Patients = ({data,setData}) => {
             );
           })
         ) : (
-          <div>{data.length == 0 ? <div className="h-[50vh] flex justify-center items-center w-[90vw]">
-            <RotatingLines
-                visible={true}
-                height="96"
-                width="96"
-                color="grey"
-                strokeWidth="5"
-                animationDuration="0.75"
-                ariaLabel="rotating-lines-loading"
-                wrapperStyle={{}}
-                wrapperClass=""
-                />
-          </div>:'No patients found....'}</div>
+          <div>No patients found....</div>
         )}
       </div>
     </div>
